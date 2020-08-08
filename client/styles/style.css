@@ -13,13 +13,17 @@ canvas {
   max-height: 100%;
 }
 
+canvas:focus {
+  outline: none;
+}
+
 .home {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 10% 80% 10%;
-      grid-template-columns: 10% 80% 10%;
-  -ms-grid-rows: 10% 80% 10%;
-      grid-template-rows: 10% 80% 10%;
+  -ms-grid-columns: 20% 60% 20%;
+      grid-template-columns: 20% 60% 20%;
+  -ms-grid-rows: 10% 70% 20%;
+      grid-template-rows: 10% 70% 20%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -68,10 +72,18 @@ canvas {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  -ms-grid-column: 3;
-  grid-column: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
   -ms-grid-row: 3;
-  grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  font-size: 1.2rem;
 }
 
 .home button:hover {

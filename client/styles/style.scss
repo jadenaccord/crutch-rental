@@ -14,10 +14,14 @@ canvas {
     max-height: 100%;
 }
 
+canvas:focus {
+    outline: none;
+}
+
 .home {
     display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 70% 20%;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -52,8 +56,12 @@ canvas {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 
-    grid-column: 3;
-    grid-row: 3;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+    align-self: start;
+    justify-self: right;
+    font-size: 1.2rem;
   }
   button:hover {
     cursor: pointer;
