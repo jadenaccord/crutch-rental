@@ -145,7 +145,7 @@ canvas:focus {
 }
 
 .home .img-container img {
-  max-width: 100%;
+  width: 137%;
   max-height: 80vh;
   -o-object-fit: cover;
      object-fit: cover;
@@ -414,6 +414,7 @@ canvas:focus {
   }
   .home .img-container {
     display: block;
+    top: 15vh;
     left: 0vw;
   }
   .home .three-container {
