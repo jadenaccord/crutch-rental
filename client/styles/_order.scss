@@ -19,6 +19,10 @@
             padding: 1.5rem 1rem;
             border-radius: 0.5rem;
         }
+        #form-amount {
+            display: flex;
+            justify-content: space-evenly;
+        }
         button {
             margin-top: 1rem;
             width: 100%;
