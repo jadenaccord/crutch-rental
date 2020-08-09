@@ -1,0 +1,24 @@
+.about {
+    background-color: rgb(36, 36, 36);
+    color: white;
+
+    h2 {
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+        color: white;
+    }
+
+    .text-container {
+        width: 80%;
+        margin: auto;
+        p {
+            color: white;
+        }
+        .contact {
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 1.75rem;
+        }
+    }
+}

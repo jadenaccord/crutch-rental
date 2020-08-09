@@ -1,0 +1,66 @@
+canvas {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+canvas:focus {
+    outline: none;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 70% 20%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    object-fit: contain;
+
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(180,180,180,1) 100%);
+
+    h1 {
+        margin-top: 4rem;
+        text-align: center;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    h3 {
+        margin-top: 10rem;
+        text-align: center;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .three-container {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        max-width: 100%;
+        max-height: 100%;
+        width: 800px;
+        height: 600px;
+    }
+
+  a {
+    background-color: rgb(0, 132, 255);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3rem;
+    border: none;
+    padding: 1rem 4rem;
+    display: inline-block;
+    font-weight: 600;
+
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+    align-self: start;
+    justify-self: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+  }
+}
