@@ -49,6 +49,57 @@
                 <button type="submit">Order crutch</button>
             </form>
             <div class="smaller">* required</div>
+            <h3>Not sure yet? <br><a href="#reviews">Check out some reviews below:</a></h3>
+        </section>
+        <section class="reviews" id="reviews">
+            <h2>Reviews</h2>
+            <div class="reviews-container">
+                <div class="review" id="review0">Review 0</div>
+                <div class="review" id="review1">Review 1</div>
+                <div class="review" id="review2">Review 2</div>
+                <div class="review" id="review3">Review 3</div>
+                <div class="review" id="review4">Review 4</div>
+                <div class="review" id="review5">Review 5</div>
+            </div>
+            <h3>Happy with our service?<br><a onclick="openForm()" id="form-open-button">Leave a review</a></h3>
+            <div class="dim-overlay" id="dim-overlay"></div>
+            <div class="review-form-container" id="review-form-container">
+                <form action="/review" method="post" id="review-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Rating *</label>
+                        <input type="radio" name="rating" id="rating">
+                    </div>
+                    <div class="form-group">
+                        <label for="review-text">Text</label>
+                        <textarea name="review-text" id="review-text" rows="5" form="review-form"></textarea>
+                    </div>
+                    <button type="submit">Submit review</button>
+                </form>
+                <div class="smaller">* required. <a onclick="closeForm()">Cancel.</a></div>
+            </div>
+            <script>
+                document.addEventListener('keydown', (e) => { if (e.keyCode == 27) { closeForm() } });
+                function openForm() {
+                    document.getElementById("review-form-container").style.display = "block";
+                    document.getElementById("dim-overlay").style.display = "block";
+                    document.getElementById("form-open-button").onclick = () => closeForm();
+                    document.getElementById("form-open-button").innerText = "Cancel";
+                }
+                function closeForm() {
+                    document.getElementById("review-form-container").style.display = "none";
+                    document.getElementById("dim-overlay").style.display = "none";
+                    document.getElementById("form-open-button").onclick = () => openForm();
+                    document.getElementById("form-open-button").innerText = "Leave a review";
+                }             
+            </script>
         </section>
         <section class="about" id="about">
             <h2>About</h2>
@@ -60,7 +111,7 @@
                     and the crutch will be delivered on the date specified.</p>
                 <p>Clutch Crutch offers payment at delivery or after return. So you can focus on getting back on your
                     feet and worry about payment later.</p>
-                <p class="contact">Want to get in contact? Email us at:<br>contact@clutchcrutch.com</p>
+                <p class="contact">Want to get in contact? Email us at:<br> <a href="mailto:contact@clutchcrutch.com">contact@clutchcrutch.com</a></p>
             </div>
         </section>
     </main>
