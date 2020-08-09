@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,36 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
+    <div class="nav-container">
+        <div class="nav">
+            <div class="nav-section" id="nav1">
+                <div class="logo">L</div>
+                <div class="title">Clutch Crutch</div>
+            </div>
+            <div class="nav-section" id="nav2">
+                    <a href="#home"><span class="color-primary">Home</span></a>
+                    <a href="#order">Order</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#about">About</a>
+            </div>
+            <div class="nav-section" id="nav3"><a href="#about">Contact us</a></div>
+        </div>
+    </div>
     <main>
-        <section class="home">
-            <h1>Clutch Crutch</h1>
-            <h3>Amstelveen</h3>
+        <section class="home"> 
+            <div class="titlebox">
+                <h1><span class="color-primary">Get</span> Back <span class="color-primary">On</span> Your <span class="color-primary">Feet</span></h1>
+                <h3>with rented crutches from Clutch Crutch</h3>
+                <a href="#order">Order Now</a>
+            </div>
+            <div class="img-container">
+                <img src="./img/crutches.png" alt="">
+            </div>
             <div class="three-container" id="three-container">
                 <script src="js/crutch.js" type="module"></script>
             </div>
-            <a href="#order">Get one</a>
         </section>
         <section class="order" id="order">
             <h2>Get a crutch</h2>
@@ -35,8 +57,10 @@
                 </div>
                 <label for="amount">Amount *</label>
                 <div class="form-group" id="form-amount">
-                    <div class="amount1"><input type="radio" name="amount" id="amount1" value="1" required>  <label for="amount1">Single</label></div>
-                    <div class="amount2"><input type="radio" name="amount" id="amount2" value="2" required>  <label for="amount2">Pair</label></div>
+                    <div class="amount1"><input type="radio" name="amount" id="amount1" value="1" required> <label
+                            for="amount1">Single</label></div>
+                    <div class="amount2"><input type="radio" name="amount" id="amount2" value="2" required> <label
+                            for="amount2">Pair</label></div>
                 </div>
                 <div class="form-group">
                     <label for="address">Address *</label>
@@ -101,19 +125,25 @@
             <h2>About</h2>
             <div class="text-container">
                 <div class="paragraph-container">
-                    <p>'Clutch Crutch' is a crutch rental service based out of Amstelveen. Clutch Crutch also operates in
+                    <p>'Clutch Crutch' is a crutch rental service based out of Amstelveen. Clutch Crutch also operates
+                        in
                         parts of Amsterdam.</p>
-                    <p>Often, people only need crutches for a short time, so they opt to rent one. Clutch Crutch offers a
-                        straightforward solution to do so. You just order a crutch (or two) using the easy-to-use order form
+                    <p>Often, people only need crutches for a short time, so they opt to rent one. Clutch Crutch offers
+                        a
+                        straightforward solution to do so. You just order a crutch (or two) using the easy-to-use order
+                        form
                         and the crutch will be delivered on the date specified.</p>
-                    <p>Clutch Crutch offers payment at delivery or after return. So you can focus on getting back on your
+                    <p>Clutch Crutch offers payment at delivery or after return. So you can focus on getting back on
+                        your
                         feet and worry about payment later.</p>
                 </div>
                 <div class="contact-container">
-                    <p class="contact">Want to get in contact? Email us at:<br> <a href="mailto:contact@clutchcrutch.com">contact@clutchcrutch.com</a></p>
+                    <p class="contact">Want to get in contact? Email us at:<br> <a
+                            href="mailto:contact@clutchcrutch.com">contact@clutchcrutch.com</a></p>
                 </div>
             </div>
         </section>
     </main>
 </body>
+
 </html>

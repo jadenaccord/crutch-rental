@@ -1,6 +1,23 @@
 @media screen and (orientation: portrait) {
+    .nav-container {
+        width: 85vw;
+        left: 7.5vw;
+        .nav {
+            grid-template-columns: 1fr 10fr;
+            .title {
+                display: none;
+            }
+            #nav2 {
+                justify-self: right;
+            }
+            #nav3 {
+                display: none;
+            }
+        }
+    }
+
     .home {
-        grid-template-columns: 10% 80% 10%;
+        grid-template-columns: 7.5% 85% 7.5%;
         background: white;
 
         h1 {
@@ -16,8 +33,16 @@
             font-size: 2.5rem;
             border-radius: 4.5rem;
             padding: 2rem 4rem;
-            grid-column: 2 / 3;
-            justify-self: right;
+            justify-self: center;
+        }
+
+        .img-container {
+            display: block;
+            left: 0vw;
+        }
+
+        .three-container {
+            display: none;
         }
     }
 
