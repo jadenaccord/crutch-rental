@@ -716,6 +716,14 @@ canvas:focus {
   font-size: 1.5rem;
 }
 
+.admin .overview .panel .data-container .paid {
+  background-color: green;
+}
+
+.admin .overview .panel .data-container .notpaid {
+  background-color: red;
+}
+
 .color-primary {
   color: #0084ff;
 }

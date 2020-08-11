@@ -7,7 +7,13 @@ function initialize() {
             var jobsToday = 0
             data.forEach((obj) => {
                 var newDiv = document.createElement('div')
-                newDiv.className="job-item"
+                newDiv.className = 'job-item'
+
+                if (obj.payment) {
+                    newDiv.className = 'job-item paid'
+                } else if (!obj.payment) {
+                    newDiv.className = 'job-item notpaid'
+                }
 
                 var name = document.createElement('h3')
                 name.innerHTML = `Name: ${obj.clientname}`
@@ -15,9 +21,10 @@ function initialize() {
                 email.innerHTML = `Email: ${obj.clientemail}`
 
                 var startDate = document.createElement('h3')
-                var strArray = obj.startdate.split("T")
+                var strArray = obj.startdate.split('T')
                 var lastDate = strArray[0][strArray[0].length - 1]
-                var newDate = strArray[0].slice(0, -1) + (parseInt(lastDate) + 1)
+                var newDate =
+                    strArray[0].slice(0, -1) + (parseInt(lastDate) + 1)
                 startDate.innerHTML = `Date: ${newDate}`
 
                 var address = document.createElement('h3')
@@ -35,17 +42,22 @@ function initialize() {
                 var today = new Date()
                 var month = today.getMonth() + 1
                 if (month <= 9) {
-                    month = "0" + month
+                    month = '0' + month
                 }
-                var date = today.getFullYear() + '-' + month + '-' + (today.getDate())
+                var date =
+                    today.getFullYear() + '-' + month + '-' + today.getDate()
 
                 if (newDate == date) {
                     jobsToday += 1
                     var todayDiv = newDiv.cloneNode(true)
-                    document.getElementById('today-jobs-container').appendChild(todayDiv)
+                    document
+                        .getElementById('today-jobs-container')
+                        .appendChild(todayDiv)
                 } else {
                 }
             })
-            document.getElementById("job-amount").innerHTML = `${jobsToday} jobs`
+            document.getElementById(
+                'job-amount'
+            ).innerHTML = `${jobsToday} jobs`
         })
 }
