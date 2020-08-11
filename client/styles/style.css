@@ -580,9 +580,32 @@ canvas:focus {
   padding-top: 0;
 }
 
-.admin .home {
-  -ms-grid-columns: 5% 1fr 5%;
-      grid-template-columns: 5% 1fr 5%;
+@media screen and (orientation: portrait) {
+  .admin {
+    overflow: scroll;
+  }
+  .admin .home {
+    -ms-grid-columns: 5% 1fr 5%;
+        grid-template-columns: 5% 1fr 5%;
+  }
+  .admin .home .titlebox a {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+  }
+  .admin .overview {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 3vh !important;
+    overflow-y: scroll;
+  }
+  .admin .overview .panel {
+    height: 90vh;
+  }
 }
 
 .admin {
@@ -595,8 +618,21 @@ canvas:focus {
 }
 
 .admin .home .titlebox {
-  -ms-grid-column-align: center;
-      justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
 }
 
 .admin .home .titlebox h1 {
@@ -606,6 +642,14 @@ canvas:focus {
 .admin .home .titlebox h3 {
   text-align: center;
   font-size: 2.5rem;
+}
+
+.admin .home .titlebox a {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .admin .home .logout-container {

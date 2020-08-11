@@ -1,5 +1,23 @@
-.admin {
-    .home {
-        grid-template-columns: 5% 1fr 5%;
+@media screen and (orientation: portrait) {
+    .admin {
+        .home {
+            grid-template-columns: 5% 1fr 5%;
+            .titlebox {
+                a {
+                    font-size: 2rem;
+                    padding: 1rem 2rem;
+                }
+            }
+        }
+        overflow: scroll;
+        .overview {
+            display: flex !important;
+            flex-direction: column;
+            height: 3vh !important;
+            overflow-y: scroll;
+            .panel {
+                height: 90vh;
+            }
+        }
     }
 }

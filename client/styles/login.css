@@ -8,4 +8,11 @@
   margin: auto;
   padding-top: 5%;
 }
+
+@media screen and (orientation: portrait) {
+  .form-container form {
+    width: 80%;
+    padding-top: 30%;
+  }
+}
 /*# sourceMappingURL=login.css.map */

@@ -9,5 +9,10 @@
 }
 
 @media screen and (orientation: portrait) {
-
+    .form-container {
+        form {
+            width: 80%;
+            padding-top: 30%;
+        }
+    }
 }
