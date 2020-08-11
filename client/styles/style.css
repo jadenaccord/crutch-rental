@@ -113,7 +113,6 @@ canvas:focus {
   overflow: hidden;
   -o-object-fit: contain;
      object-fit: contain;
-  background: radial-gradient(circle, white 0%, white 50%, #b4b4b4 100%);
 }
 
 .home .titlebox {
@@ -506,6 +505,7 @@ canvas:focus {
 }
 
 .about {
+  background: none;
   background-color: #242424;
   color: white;
   display: -webkit-box;
@@ -580,6 +580,75 @@ canvas:focus {
   padding-top: 0;
 }
 
+.admin .home {
+  -ms-grid-columns: 5% 1fr 5%;
+      grid-template-columns: 5% 1fr 5%;
+}
+
+.admin {
+  overflow: hidden;
+}
+
+.admin .home {
+  -ms-grid-columns: 15% 1fr 15%;
+      grid-template-columns: 15% 1fr 15%;
+}
+
+.admin .home .titlebox {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.admin .home .titlebox h3 {
+  font-size: 2.5rem;
+}
+
+.admin .home .logout-container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+.admin .home .logout-container a {
+  background: none;
+  padding: 0;
+  color: #0084ff;
+  font-size: 1.5rem;
+}
+
+.admin .overview {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  margin: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.admin .overview .panel {
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a0a0a0;
+  border-radius: 2rem;
+  background-color: white;
+  padding: 2rem;
+}
+
+.admin .overview .panel h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+}
+
 .color-primary {
   color: #0084ff;
 }
@@ -621,5 +690,6 @@ p {
 
 section {
   min-height: 100vh;
+  background: radial-gradient(circle, white 0%, white 50%, #b4b4b4 100%);
 }
 /*# sourceMappingURL=style.css.map */

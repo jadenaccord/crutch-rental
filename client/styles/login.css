@@ -1,0 +1,11 @@
+.form-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.form-container form {
+  width: 30%;
+  margin: auto;
+  padding-top: 5%;
+}
+/*# sourceMappingURL=login.css.map */

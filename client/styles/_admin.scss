@@ -1,0 +1,50 @@
+@import 'admin-mobile';
+
+.admin {
+    .home {
+        grid-template-columns: 15% 1fr 15%;
+        .titlebox {
+            justify-self: center;
+            h3 {
+                font-size: 2.5rem;
+            }
+        }
+        .logout-container {
+            grid-column: 2 / 3;
+            justify-self: right;
+            a {
+                background: none;
+                padding: 0;
+                color: rgb(0, 132, 255);
+                font-size: 1.5rem;
+            }
+        }
+    }
+    overflow: hidden;
+    .overview {
+        display: grid;
+        width: 100vw;
+        margin: auto;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        .panel {
+            height: 100%;
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(160, 160, 160);
+            border-radius: 2rem;
+            background-color: white;
+            padding: 2rem;
+            h2 {
+                padding: 0;
+                margin: 0;
+                font-size: 3rem;
+            }
+        }
+    }
+}
