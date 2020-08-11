@@ -47,3 +47,23 @@ section {
   min-height: 100vh;
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(180,180,180,1) 100%);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a0a0a0; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

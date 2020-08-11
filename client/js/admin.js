@@ -6,7 +6,6 @@ function initialize() {
         .then((data) => {
             var jobsToday = 0
             data.forEach((obj) => {
-                console.log("New job")
                 var newDiv = document.createElement('div')
                 newDiv.className="job-item"
 
@@ -41,20 +40,12 @@ function initialize() {
                 var date = today.getFullYear() + '-' + month + '-' + (today.getDate())
 
                 if (newDate == date) {
-                    console.log("Job found for today.")
                     jobsToday += 1
                     var todayDiv = newDiv.cloneNode(true)
                     document.getElementById('today-jobs-container').appendChild(todayDiv)
                 } else {
-                    console.log("Job NOT for today.")
                 }
-                console.log("")
             })
-            setTodayAmount(jobsToday)
+            document.getElementById("job-amount").innerHTML = `${jobsToday} jobs`
         })
 }
-
-function setTodayAmount (amount) {
-    document.getElementById("job-amount").innerHTML = `${amount} jobs`
-}
-

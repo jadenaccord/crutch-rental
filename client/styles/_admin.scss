@@ -19,13 +19,14 @@
             a {
                 background: none;
                 padding: 0;
-                color: rgb(0, 132, 255);
+                color: #0084ff;
                 font-size: 1.5rem;
             }
         }
     }
     overflow: hidden;
     .overview {
+        background: none;
         display: grid;
         width: 100vw;
         height: 100vh;
@@ -38,11 +39,11 @@
         grid-gap: 2rem;
         .panel {
             width: 100%;
-            border-style: solid;
-            border-width: 1px;
-            border-color: rgb(160, 160, 160);
-            border-radius: 2rem;
-            background-color: white;
+
+            border-radius: 50px;
+            background: #ffffff;
+            box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+
             padding: 2rem;
             overflow: hidden;
             h2 {
