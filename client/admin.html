@@ -7,15 +7,16 @@
     <title>Admin - Clutch Crutch</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/admin.js"></script>
 </head>
 
 <body>
     <main class="admin">
         <section class="home" id="home">
             <div class="titlebox">
-                <h1>Welcome {name}</h1>
-                <h3>There are <span style="font-weight: 600; color: rgb(0, 132, 255)">{0} jobs</span> today</h3>
+                <h1>Welcome</h1>
+                <h3>There are <span style="font-weight: 600; color: rgb(0, 132, 255)" id="job-amount">{0} jobs</span> today</h3>
                 <a href="#overview">Continue to overview</a>
             </div>
             <div class="logout-container">
@@ -25,12 +26,15 @@
         <section class="overview" id="overview">
             <div class="panel" id="list">
                 <h2>All Jobs</h2>
+                <div class="data-container" id="all-jobs-container"></div>
             </div>
             <div class="panel" id="today">
                 <h2>Today</h2>
+                <div class="data-container" id="today-jobs-container"></div>
             </div>
             <div class="panel" id="clients">
                 <h2>Clients</h2>
+                <div class="data-container" id="clients-container"></div>
             </div>
         </section>
     </main>
