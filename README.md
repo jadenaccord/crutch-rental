@@ -1,2 +1,2 @@
 ## Clutch Crutch ##
-Website for fictious clutch rental company.
+Website for fictious crutch rental company.
